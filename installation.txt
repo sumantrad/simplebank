@@ -1,0 +1,14 @@
+install tableplus
+
+wget -qO - https://deb.tableplus.com/apt.tableplus.com.gpg.key | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/20 tableplus main"
+sudo apt update
+sudo apt install tableplus
+
+
+install migrate (use second step like tableplus)
+
+curl -L https://packagecloud.io/golang-migrate/migrate/gpgkey | sudo apt-key add -
+echo "deb https://packagecloud.io/golang-migrate/migrate/ubuntu/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/migrate.list
+sudo apt update
+sudo apt install -y migrate
