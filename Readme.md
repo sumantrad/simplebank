@@ -1,3 +1,3 @@
 experimenting with
-udemy course
+Udemy course
 'Backend Masterclass with golang, postgres and kubernetes'
